@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { LoggingService } from './LoggingService.service';
+import { Persona } from './persona.model';
+import { PersonasService } from './persona.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'listado-personas';
+  titulo = 'Listado de Personas';
+  
+
 }

@@ -1,0 +1,22 @@
+<div class="item">
+  <ul>
+    <li>
+      <!--routerLink: Parecido al href pero de angular-->
+      <!--Y nos permite ubicarnos en el indice que se ha seleccionado-->
+       <!-- [queryParams]: Permite pasar parametros -->
+       <!-- {modoEdicion:'1'} si es uno es modo edicion si es 0 modo agregar -->
+       <!-- Se puede observar en la parte inferior -->
+       <!-- Se pasa a formulario para que la recupere -->
+
+
+      <a [routerLink]="['/personas',indice]"
+         [queryParams]="{modoEdicion:'1'}" >
+        {{persona.nombre}} {{persona.apellido}}
+      </a>
+    </li>
+  </ul>
+  <!--
+    <input type="checkbox" (click)="emitirSaludo()" />
+    <p>{{ indice + 1 }}: {{ persona.nombre }} {{ persona.apellido }}</p>
+  -->
+</div>

@@ -1,0 +1,26 @@
+<div style="text-align: center" >
+  <button style="cursor: pointer" (click)="agregar()">+</button>
+</div>
+
+<div class="box">  
+    <app-persona
+      *ngFor="let personaElemento of personas; let i = index"
+      [persona]="personaElemento"
+      [indice]="i"
+    >
+    </app-persona>
+  </div>
+  
+  <!--
+    FORMA 1 DE CONFIGURAR RUTAS
+    <div class="box">
+      <app-formulario></app-formulario>
+    </div>
+  -->
+
+  <!--FORMA 2: ROUTAS HIJAS <router-outlet> se encargara de manejar las rutas jias-->
+  <router-outlet></router-outlet>
+  
+
+
+
