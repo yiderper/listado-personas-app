@@ -20,7 +20,20 @@ export class PersonasComponent implements OnInit {
        // router:Router Es un servicio que permite redigirse a otra ruta
 
   ngOnInit(): void {
+    /*Linea que utilizaba el arreglo
     this.personas = this.personasService.personas;
+    */
+
+    //Llamaos el método obtener personas
+    // y Devuelve un observable y nos subscribomos para que se ejecute el metodo
+    this.personasService.obtenerPersonas()
+    .subscribe(
+      (personas: Persona[]) => {
+        this.personas = personas;
+        this.personasService.setPersonas(personas);
+      }
+    );
+
   }
 
   agregar(){
