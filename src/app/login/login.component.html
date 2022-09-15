@@ -1,0 +1,16 @@
+<div class="box">
+    <!--Si es validad llama al método login-->
+    <!--Y se le pasa la referencia local el objeo f-->
+    <form class="item" #f="ngForm" (ngSubmit)="f.form.valid && login(f)">
+        <div>
+            <!--ngModel para asocial el nombre email-->
+            <input type="email" name="email" placeholder="Email" ngModel required size="20">
+        </div>
+        <div>
+            <!--ngModel para asocial el nombre email-->
+            <input type="password" name="password" placeholder="password" ngModel required size="15">
+        </div>
+        <button type="submit"  style="cursor : pointer">+</button>
+
+    </form>
+</div>

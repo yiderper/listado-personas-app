@@ -1,6 +1,7 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
+import { LoginComponent } from './login/login.component';
 import { Persona } from './persona.model';
 import { FormularioComponent } from './personas/formulario/formulario.component';
 import { PersonasComponent } from './personas/personas.component';
@@ -32,9 +33,10 @@ const routes : Routes = [
     { path: 'agregar', component: FormularioComponent},
     { path: ':id', component: FormularioComponent }
     ]},
+  { path: 'login', component: LoginComponent},  
   // Siempre de ultimo se define la ruta en caso de que se define una ruta qu
   // que no exista  
-  // Y creamos el componente ErrorComponent
+  // Y creamos el componente ErrorComponent  
   { path: '**', component: ErrorComponent}
 ];
 
