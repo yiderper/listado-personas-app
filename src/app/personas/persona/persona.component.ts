@@ -18,7 +18,7 @@ export class PersonaComponent implements OnInit {
   }
 
   emitirSaludo(){
-    this.personasService.saludar.emit(this.indice); 
+    //this.personasService.saludar.emit(this.indice); 
   }
 
 }

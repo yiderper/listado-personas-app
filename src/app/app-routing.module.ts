@@ -35,9 +35,8 @@ const routes : Routes = [
   // Siempre de ultimo se define la ruta en caso de que se define una ruta qu
   // que no exista  
   // Y creamos el componente ErrorComponent
-  { path: '**', component: ErrorComponent},
-]
-
+  { path: '**', component: ErrorComponent}
+];
 
 
 @NgModule({
